@@ -3,30 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <title>Projeto Finanças - Davi Marco</title>
+
 <style>
-  body { font-family: Arial, sans-serif; margin: 30px; }
-  h1, h2 { text-align: center; }
-  h2 { margin-top: 40px; }
-  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-  th, td { border: 1px solid #000; padding: 8px; text-align: left; }
-  th { background-color: #f0f0f0; }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+  }
+
+  th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f0f0f0;
+  }
+
+  /* BOTÃO */
   .imprimir-btn {
     display: block;
-    width: 150px;
-    margin: 20px auto;
-    padding: 10px;
+    width: 200px;
+    margin: 30px auto;
+    padding: 12px;
     background-color: #007BFF;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
   }
+
+  /* ASSINATURAS – NÃO QUEBRA PÁGINA */
+  .assinaturas {
+    margin-top: 50px;
+    page-break-inside: avoid;
+  }
+
+  .assinatura {
+    margin-top: 35px;
+  }
+
   @media print {
-    .imprimir-btn { display: none; }
+    .imprimir-btn {
+      display: none;
+    }
   }
 </style>
 </head>
+
 <body>
 
 <h1>Projeto de Economia e Finanças</h1>
@@ -36,25 +76,61 @@
 <p>Plano de Crescimento Econômico e Financeiro – Davi Marco Capital Social</p>
 
 <h2>2. Objetivo</h2>
-<p>Organizar e planejar o capital social, investimentos e lucros do negócio, promovendo crescimento sustentável e distribuição clara entre sócios.</p>
+<p>
+Organizar e planejar o capital social, investimentos e lucros do negócio,
+promovendo crescimento sustentável e distribuição clara entre sócios.
+</p>
 
 <h2>3. Capital Inicial e Fontes de Receita</h2>
+
 <table>
-<tr><th>Fonte</th><th>Valor (R$)</th></tr>
-<tr><td>Salário Lorena Santos Rodrigues</td><td>1.988</td></tr>
-<tr><td>Salário Marco Lúcio Silva</td><td>3.000</td></tr>
-<tr><td>Bolsa Família</td><td>800</td></tr>
-<tr><th>Total Receitas Mensais</th><th>5.788</th></tr>
+<tr>
+  <th>Fonte</th>
+  <th>Valor (R$)</th>
+</tr>
+<tr>
+  <td>Salário Lorena Santos Rodrigues</td>
+  <td>1.988</td>
+</tr>
+<tr>
+  <td>Salário Marco Lúcio Silva</td>
+  <td>3.000</td>
+</tr>
+<tr>
+  <td>Bolsa Família</td>
+  <td>800</td>
+</tr>
+<tr>
+  <th>Total Receitas Mensais</th>
+  <th>5.788</th>
+</tr>
 </table>
-<p>Distribuição do capital: 50% despesas da casa, 50% investimento em capital social do negócio.</p>
-<p>Investimento Mensal Total em Capital Social: 2.894 + 3.000 (trader) = 5.894 R$/mês</p>
+
+<p>
+Distribuição do capital: 50% despesas da casa, 50% investimento em capital social do negócio.
+</p>
+
+<p>
+Investimento Mensal Total em Capital Social:
+<strong>2.894 + 3.000 (trader) = 5.894 R$/mês</strong>
+</p>
 
 <h2>4. Estratégia de Crescimento</h2>
-<p>O capital destinado a investimentos será utilizado em trader, e o lucro obtido será reinvestido no Davi Marco Capital Social, aumentando o capital da empresa mês a mês.</p>
+<p>
+O capital destinado a investimentos será utilizado em trader,
+e o lucro obtido será reinvestido no Davi Marco Capital Social,
+aumentando o capital da empresa mês a mês.
+</p>
 
 <h2>4.1 Projeção Mensal de Investimento e Lucro</h2>
+
 <table>
-<tr><th>Mês</th><th>Capital Investido (R$)</th><th>Trader (R$)</th><th>Total Capital Social Acumulado (R$)</th></tr>
+<tr>
+  <th>Mês</th>
+  <th>Capital Investido (R$)</th>
+  <th>Trader (R$)</th>
+  <th>Total Capital Social Acumulado (R$)</th>
+</tr>
 <tr><td>1</td><td>2.894</td><td>3.000</td><td>5.894 + lucro acumulado</td></tr>
 <tr><td>2</td><td>2.894</td><td>3.000</td><td>11.788 + lucro acumulado</td></tr>
 <tr><td>3</td><td>2.894</td><td>3.000</td><td>17.682 + lucro acumulado</td></tr>
@@ -70,8 +146,13 @@
 </table>
 
 <h2>5. Distribuição do Capital Social</h2>
+
 <table>
-<tr><th>Sócio</th><th>Percentual</th><th>Valor (R$)</th></tr>
+<tr>
+  <th>Sócio</th>
+  <th>Percentual</th>
+  <th>Valor (R$)</th>
+</tr>
 <tr><td>Empresa Davi Marco</td><td>50%</td><td>35.364</td></tr>
 <tr><td>Marco Lúcio Silva</td><td>10%</td><td>7.072,80</td></tr>
 <tr><td>Lorena Santos Rodrigues</td><td>10%</td><td>7.072,80</td></tr>
@@ -82,19 +163,31 @@
 
 <h2>6. Resultados Esperados</h2>
 <ul>
-<li>Crescimento sustentável do capital social.</li>
-<li>Lucro reinvestido para ampliar capacidade financeira da empresa.</li>
-<li>Distribuição transparente e acordada entre os sócios.</li>
-<li>Planejamento de longo prazo para novos investimentos e expansão do negócio.</li>
+  <li>Crescimento sustentável do capital social.</li>
+  <li>Lucro reinvestido para ampliar capacidade financeira da empresa.</li>
+  <li>Distribuição transparente e acordada entre os sócios.</li>
+  <li>Planejamento de longo prazo para novos investimentos e expansão do negócio.</li>
 </ul>
 
 <h2>7. Assinaturas</h2>
-<p>Concordado e aprovado pelos sócios:</p>
-<p>____________________________<br>Marco Lúcio Silva Fernandes</p>
-<p>____________________________<br>Lorena Santos Rodrigues</p>
 
-<!-- Botão de impressão -->
-<button class="imprimir-btn" onclick="window.print()">🖨 Imprimir este Documento</button>
+<div class="assinaturas">
+  <p>Concordado e aprovado pelos sócios:</p>
+
+  <div class="assinatura">
+    ____________________________<br>
+    Marco Lúcio Silva Fernandes
+  </div>
+
+  <div class="assinatura">
+    ____________________________<br>
+    Lorena Santos Rodrigues
+  </div>
+</div>
+
+<button class="imprimir-btn" onclick="window.print()">
+  🖨 Imprimir este Documento
+</button>
 
 </body>
 </html>
