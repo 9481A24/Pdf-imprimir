@@ -34,7 +34,6 @@
     background-color: #f0f0f0;
   }
 
-  /* BOTÃO */
   .imprimir-btn {
     display: block;
     width: 200px;
@@ -49,14 +48,51 @@
     font-size: 16px;
   }
 
-  /* ASSINATURAS – NÃO QUEBRA PÁGINA */
   .assinaturas {
-    margin-top: 50px;
+    margin-top: 60px;
+    text-align: center;
     page-break-inside: avoid;
   }
 
   .assinatura {
-    margin-top: 35px;
+    margin-top: 50px;
+  }
+
+  .linha {
+    width: 300px;
+    margin: 0 auto 8px auto;
+    border-bottom: 1px solid #000;
+  }
+
+  .data-documento {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .pagina-nova {
+    page-break-before: always;
+  }
+
+  .tabela-ativos th,
+  .tabela-ativos td {
+    text-align: center;
+  }
+
+  .acordo {
+    page-break-before: always;
+    margin-top: 40px;
+  }
+
+  .acordo p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  .assinaturas-acordo {
+    margin-top: 60px;
+    text-align: center;
+    page-break-inside: avoid;
   }
 
   @media print {
@@ -84,110 +120,115 @@ promovendo crescimento sustentável e distribuição clara entre sócios.
 <h2>3. Capital Inicial e Fontes de Receita</h2>
 
 <table>
-<tr>
-  <th>Fonte</th>
-  <th>Valor (R$)</th>
-</tr>
-<tr>
-  <td>Salário Lorena Santos Rodrigues</td>
-  <td>1.988</td>
-</tr>
-<tr>
-  <td>Salário Marco Lúcio Silva</td>
-  <td>3.000</td>
-</tr>
-<tr>
-  <td>Bolsa Família</td>
-  <td>800</td>
-</tr>
-<tr>
-  <th>Total Receitas Mensais</th>
-  <th>5.788</th>
-</tr>
+<tr><th>Fonte</th><th>Valor (R$)</th></tr>
+<tr><td>Salário Lorena Santos Rodrigues</td><td>1.988</td></tr>
+<tr><td>Salário Marco Lúcio Silva</td><td>3.000</td></tr>
+<tr><td>Bolsa Família</td><td>800</td></tr>
+<tr><th>Total Receitas Mensais</th><th>5.788</th></tr>
 </table>
 
-<p>
-Distribuição do capital: 50% despesas da casa, 50% investimento em capital social do negócio.
-</p>
+<p>Distribuição do capital: 50% despesas da casa, 50% investimento em capital social do negócio.</p>
 
-<p>
-Investimento Mensal Total em Capital Social:
-<strong>2.894 + 3.000 (trader) = 5.894 R$/mês</strong>
-</p>
+<p><strong>Investimento Mensal Total em Capital Social: 2.894 + 3.000 (trader) = 5.894 R$/mês</strong></p>
 
 <h2>4. Estratégia de Crescimento</h2>
 <p>
 O capital destinado a investimentos será utilizado em trader,
-e o lucro obtido será reinvestido no Davi Marco Capital Social,
-aumentando o capital da empresa mês a mês.
+e o lucro obtido será reinvestido no Davi Marco Capital Social.
 </p>
 
-<h2>4.1 Projeção Mensal de Investimento e Lucro</h2>
+<h2>4.1 Projeção Mensal</h2>
 
 <table>
-<tr>
-  <th>Mês</th>
-  <th>Capital Investido (R$)</th>
-  <th>Trader (R$)</th>
-  <th>Total Capital Social Acumulado (R$)</th>
-</tr>
-<tr><td>1</td><td>2.894</td><td>3.000</td><td>5.894 + lucro acumulado</td></tr>
-<tr><td>2</td><td>2.894</td><td>3.000</td><td>11.788 + lucro acumulado</td></tr>
-<tr><td>3</td><td>2.894</td><td>3.000</td><td>17.682 + lucro acumulado</td></tr>
-<tr><td>4</td><td>2.894</td><td>3.000</td><td>23.576 + lucro acumulado</td></tr>
-<tr><td>5</td><td>2.894</td><td>3.000</td><td>29.470 + lucro acumulado</td></tr>
-<tr><td>6</td><td>2.894</td><td>3.000</td><td>35.364 + lucro acumulado</td></tr>
-<tr><td>7</td><td>2.894</td><td>3.000</td><td>41.258 + lucro acumulado</td></tr>
-<tr><td>8</td><td>2.894</td><td>3.000</td><td>47.152 + lucro acumulado</td></tr>
-<tr><td>9</td><td>2.894</td><td>3.000</td><td>53.046 + lucro acumulado</td></tr>
-<tr><td>10</td><td>2.894</td><td>3.000</td><td>58.940 + lucro acumulado</td></tr>
-<tr><td>11</td><td>2.894</td><td>3.000</td><td>64.834 + lucro acumulado</td></tr>
-<tr><td>12</td><td>2.894</td><td>3.000</td><td>70.728 + lucro acumulado</td></tr>
+<tr><th>Mês</th><th>Capital</th><th>Trader</th><th>Total</th></tr>
+<tr><td>1</td><td>2.894</td><td>3.000</td><td>5.894</td></tr>
+<tr><td>12</td><td>2.894</td><td>3.000</td><td>70.728</td></tr>
 </table>
 
 <h2>5. Distribuição do Capital Social</h2>
 
 <table>
-<tr>
-  <th>Sócio</th>
-  <th>Percentual</th>
-  <th>Valor (R$)</th>
-</tr>
-<tr><td>Empresa Davi Marco</td><td>50%</td><td>35.364</td></tr>
-<tr><td>Marco Lúcio Silva</td><td>10%</td><td>7.072,80</td></tr>
-<tr><td>Lorena Santos Rodrigues</td><td>10%</td><td>7.072,80</td></tr>
+<tr><th>Sócio</th><th>%</th><th>Valor</th></tr>
+<tr><td>Empresa</td><td>50%</td><td>35.364</td></tr>
+<tr><td>Marco Lúcio</td><td>10%</td><td>7.072,80</td></tr>
+<tr><td>Lorena</td><td>10%</td><td>7.072,80</td></tr>
 <tr><td>Jasminy</td><td>10%</td><td>7.072,80</td></tr>
-<tr><td>Davi Walker</td><td>10%</td><td>7.072,80</td></tr>
+<tr><td>Davi</td><td>10%</td><td>7.072,80</td></tr>
 <tr><td>Andriele</td><td>10%</td><td>7.072,80</td></tr>
 </table>
 
-<h2>6. Resultados Esperados</h2>
-<ul>
-  <li>Crescimento sustentável do capital social.</li>
-  <li>Lucro reinvestido para ampliar capacidade financeira da empresa.</li>
-  <li>Distribuição transparente e acordada entre os sócios.</li>
-  <li>Planejamento de longo prazo para novos investimentos e expansão do negócio.</li>
-</ul>
+<div class="data-documento">
+  Belo Horizonte, 04 de fevereiro de 2026
+</div>
 
 <h2>7. Assinaturas</h2>
 
 <div class="assinaturas">
-  <p>Concordado e aprovado pelos sócios:</p>
-
   <div class="assinatura">
-    ____________________________<br>
-    Marco Lúcio Silva Fernandes
+    <div class="linha"></div>
+    <strong>Marco Lúcio Silva Fernandes</strong>
   </div>
 
   <div class="assinatura">
-    ____________________________<br>
-    Lorena Santos Rodrigues
+    <div class="linha"></div>
+    <strong>Lorena Santos Rodrigues</strong>
   </div>
 </div>
 
-<button class="imprimir-btn" onclick="window.print()">
-  🖨 Imprimir este Documento
-</button>
+<!-- PÁGINA 2 -->
+<div class="pagina-nova">
+  <h1>Relatório de Ativos – Reunião</h1>
+
+  <table class="tabela-ativos">
+    <tr><th>#</th><th>Ativo</th><th>Preço (R$)</th><th>Balanço</th></tr>
+    <tr><td>1</td><td>PETR4</td><td>38,50</td><td>Estável</td></tr>
+    <tr><td>2</td><td>VALE3</td><td>72,40</td><td>Forte</td></tr>
+    <tr><td>3</td><td>ITUB4</td><td>31,20</td><td>Sólido</td></tr>
+    <tr><td>4</td><td>BBAS3</td><td>55,10</td><td>Lucro</td></tr>
+    <tr><td>5</td><td>WEGE3</td><td>34,90</td><td>Crescimento</td></tr>
+    <tr><td>6</td><td>ABEV3</td><td>12,40</td><td>Estável</td></tr>
+    <tr><td>7</td><td>EGIE3</td><td>41,60</td><td>Dividendos</td></tr>
+    <tr><td>8</td><td>TAEE11</td><td>36,70</td><td>Forte</td></tr>
+    <tr><td>9</td><td>ENBR3</td><td>23,90</td><td>Saudável</td></tr>
+    <tr><td>10</td><td>BBSE3</td><td>32,10</td><td>Seguro</td></tr>
+  </table>
+</div>
+
+<!-- PÁGINA 3 -->
+<div class="acordo">
+  <h1>Termo de Acordo da Reunião</h1>
+
+  <p>
+    Aos 04 de fevereiro de 2026, em Belo Horizonte,
+    os sócios declaram que analisaram e aprovaram o projeto,
+    ativos apresentados e estratégia financeira.
+  </p>
+
+  <p>
+    O presente termo entra em vigor a partir da assinatura,
+    servindo como comprovação formal do acordo firmado.
+  </p>
+
+  <div class="assinaturas-acordo">
+    <div class="assinatura">
+      <div class="linha"></div>
+      <strong>Marco Lúcio Silva Fernandes</strong>
+    </div>
+
+    <div class="assinatura">
+      <div class="linha"></div>
+      <strong>Lorena Santos Rodrigues</strong>
+    </div>
+
+    <div class="assinatura">
+      <div class="linha"></div>
+      <strong>Davi Walker</strong>
+    </div>
+  </div>
+</div>
+
+<button class="imprimir-btn" onclick="window.print()">🖨 Imprimir</button>
 
 </body>
 </html>
+
